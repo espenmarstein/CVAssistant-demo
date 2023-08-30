@@ -27,7 +27,7 @@ curl https://api.openai.com/v1/chat/completions \
 
 ## Azure OpenAI Service
 
-Selve kjerne-APIet er nesten det samme som OpenAI sitt API, men du må inkludere nøkkelen (` $AZURE_OPENAI_API_KEY`) i `api-key`-headeren, i stedet. Også må du flytte model-versjonen fra selve requst-bodyen til URLen (til det navnet du har gitt den i Azure). Det kan se slik ut:
+Selve kjerne-APIet er nesten det samme som OpenAI sitt API, men du må inkludere nøkkelen (`$AZURE_OPENAI_API_KEY`) i `api-key`-headeren, i stedet. Også må du flytte model-versjonen fra selve requst-bodyen til URLen (til det navnet du har gitt den i Azure). Det kan se slik ut:
 
 ```bash
 curl https://{openai-instans}.openai.azure.com/openai/deployments/{deployment-name}/chat/completions?api-version=2023-08-01-preview \
